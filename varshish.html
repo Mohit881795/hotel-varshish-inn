@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hotel Varshish Inn — comfortable and convenient stay in the heart of MP Nagar, Bhopal. Standard, Executive and Suite rooms with warm hospitality." />
+  <meta name="theme-color" content="#2e0a15" />
+  <title>Hotel Varshish Inn | Stay in Comfort. Experience Bhopal.</title>
+
+  <!-- Favicon (SVG logo) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232e0a15'/%3E%3Cpath d='M14 26 L14 50 L50 50 L50 26 Q50 12 32 12 Q14 12 14 26 Z' fill='none' stroke='%23d4b483' stroke-width='2'/%3E%3Cpath d='M28 22 Q26 34 28 44 M32 20 Q32 34 32 44 M36 22 Q38 34 36 44' fill='none' stroke='%23d4b483' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="VARSIS.CSS" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+  ============================================================ -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary navigation">
+
+      <a href="#home" class="logo" aria-label="Hotel Varshish Inn — Home">
+        <!-- Inline SVG logo (matches provided VARSHISH logo) -->
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" role="img">
+            <!-- Arch frame -->
+            <path d="M10 40 L10 82 L70 82 L70 40 Q70 10 40 10 Q10 10 10 40 Z"
+                  fill="none" stroke="currentColor" stroke-width="2.2" />
+            <path d="M14 42 L14 78 L66 78 L66 42 Q66 14 40 14 Q14 14 14 42 Z"
+                  fill="none" stroke="currentColor" stroke-width="1" opacity="0.6" />
+            <!-- 4-pointed star -->
+            <path d="M40 22 L42 28 L48 30 L42 32 L40 38 L38 32 L32 30 L38 28 Z"
+                  fill="currentColor" />
+            <!-- Three flame / palm shapes -->
+            <path d="M24 38 Q20 52 22 72 Q24 68 26 62 Q28 50 26 40 Z"
+                  fill="currentColor" opacity="0.9" />
+            <path d="M40 42 Q36 58 36 74 Q40 70 40 74 Q40 58 40 42 Z"
+                  fill="currentColor" />
+            <path d="M56 38 Q60 52 58 72 Q56 68 54 62 Q52 50 54 40 Z"
+                  fill="currentColor" opacity="0.9" />
+            <!-- Text: VARSHISH -->
+            <text x="40" y="96" text-anchor="middle"
+                  font-family="Playfair Display, Georgia, serif"
+                  font-size="11" letter-spacing="1.4" fill="currentColor">VARSHISH</text>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <strong>Hotel Varshish Inn</strong>
+          <em>Bhopal</em>
+        </span>
+      </a>
+
+      <ul class="nav-list" id="navList">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#rooms" class="nav-link">Rooms</a></li>
+        <li><a href="#dining" class="nav-link">Dining</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-mobile-cta">
+          <button class="btn btn-gold" type="button" data-enquiry>Book Your Stay</button>
+        </li>
+      </ul>
+
+      <button class="btn btn-gold nav-cta" type="button" data-enquiry>Book Your Stay</button>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <p class="hero-eyebrow">MP Nagar &middot; Bhopal &middot; Madhya Pradesh</p>
+        <h1 class="hero-title">
+          Stay in Comfort.
+          <span>Experience Bhopal.</span>
+        </h1>
+        <p class="hero-text">
+          Experience comfortable stays, warm hospitality and convenient access
+          in the heart of Bhopal.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#rooms" class="btn btn-gold">Explore Rooms</a>
+          <button class="btn btn-outline" type="button" data-enquiry>Book Your Stay</button>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span class="scroll-mouse"><span></span></span>
+        <span class="scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+
+        <div class="about-media reveal">
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80"
+            alt="Grand reception area of Hotel Varshish Inn, Bhopal"
+            loading="lazy"
+          />
+          <div class="about-badge">
+            <span class="about-badge-title">MP Nagar</span>
+            <span class="about-badge-text">Heart of Bhopal</span>
+          </div>
+        </div>
+
+        <div class="about-body reveal" data-delay="120">
+          <p class="eyebrow">Welcome to Hotel Varshish Inn</p>
+          <h2 class="section-title">A Warm Welcome in the Heart of Bhopal</h2>
+
+          <p class="lead">
+            Located in MP Nagar, one of Bhopal's most convenient neighbourhoods,
+            Hotel Varshish Inn offers comfortable accommodation, warm hospitality
+            and easy access to the city's business and leisure destinations.
+          </p>
+
+          <p class="muted">
+            The hotel welcomes guests with a distinctive Romanian-themed facade
+            and a beautiful, grand reception area. A travel desk and a comfortable
+            waiting lounge are available to make your visit smooth and pleasant —
+            whether you are travelling for business or leisure.
+          </p>
+
+          <ul class="about-list">
+            <li>Convenient location in MP Nagar, Bhopal</li>
+            <li>Distinctive Romanian-themed facade</li>
+            <li>Grand reception and comfortable waiting lounge</li>
+            <li>Travel desk for assistance during your stay</li>
+          </ul>
+
+          <a href="#rooms" class="btn btn-outline">Explore Our Hotel</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ROOMS
+    ============================================================ -->
+    <section class="section rooms" id="rooms">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <p class="eyebrow">Accommodation</p>
+          <h2 class="section-title">Rooms Designed for Your Comfort</h2>
+          <p class="section-sub">
+            Choose from Standard, Executive and Suite room categories,
+            thoughtfully prepared for a comfortable stay in Bhopal.
+          </p>
+        </div>
+
+        <div class="rooms-grid">
+
+          <!-- Standard Room -->
+          <article class="room-card reveal" data-room="Standard Room">
+            <div class="room-media">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+                alt="Standard Room at Hotel Varshish Inn, Bhopal"
+                loading="lazy"
+              />
+            </div>
+            <div class="room-body">
+              <h3 class="room-name">Standard Room</h3>
+              <p class="room-desc">
+                A comfortable space designed for a relaxing and convenient stay.
+              </p>
+              <ul class="room-features">
+                <li>Comfortable Bedding</li>
+                <li>Attached Bathroom</li>
+                <li>Wi-Fi Access</li>
+                <li>Room Service</li>
+              </ul>
+              <button class="btn btn-outline room-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <!-- Executive Room -->
+          <article class="room-card reveal" data-delay="120" data-room="Executive Room">
+            <div class="room-media">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+                alt="Executive Room at Hotel Varshish Inn, Bhopal"
+                loading="lazy"
+              />
+            </div>
+            <div class="room-body">
+              <h3 class="room-name">Executive Room</h3>
+              <p class="room-desc">
+                Thoughtfully designed accommodation offering added comfort
+                for business and leisure travellers.
+              </p>
+              <ul class="room-features">
+                <li>Comfortable Bedding</li>
+                <li>Attached Bathroom</li>
+                <li>Wi-Fi Access</li>
+                <li>Room Service</li>
+              </ul>
+              <button class="btn btn-outline room-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+          <!-- Suite Room -->
+          <article class="room-card reveal" data-delay="240" data-room="Suite Room">
+            <div class="room-media">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+                alt="Suite Room at Hotel Varshish Inn, Bhopal"
+                loading="lazy"
+              />
+            </div>
+            <div class="room-body">
+              <h3 class="room-name">Suite Room</h3>
+              <p class="room-desc">
+                A more spacious stay experience with comfort and convenience
+                for your visit to Bhopal.
+              </p>
+              <ul class="room-features">
+                <li>Spacious Layout</li>
+                <li>Comfortable Bedding</li>
+                <li>Attached Bathroom</li>
+                <li>Room Service</li>
+              </ul>
+              <button class="btn btn-outline room-btn" type="button">View Details</button>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="rooms-note reveal">
+          For best available rates and current availability, please
+          <button type="button" class="link-btn" data-enquiry>contact our team</button>.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         AMENITIES / WHY STAY WITH US  (4 per row × 2 rows = 8)
+    ============================================================ -->
+    <section class="section amenities" id="amenities">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <p class="eyebrow">Why Stay With Us</p>
+          <h2 class="section-title">Everything You Need for a Comfortable Stay</h2>
+          <p class="section-sub">
+            Thoughtful facilities that make your visit to Bhopal relaxed and convenient.
+          </p>
+        </div>
+
+        <ul class="amenities-grid">
+
+          <!-- Row 1 -->
+          <li class="amenity reveal">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/>
+                <path d="M3 14h18"/>
+                <path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>
+              </svg>
+            </span>
+            <h3>Comfortable Rooms</h3>
+            <p>Standard, Executive and Suite categories.</p>
+          </li>
+
+          <li class="amenity reveal" data-delay="60">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 8.5a15 15 0 0 1 19 0"/>
+                <path d="M5.8 12.2a10.2 10.2 0 0 1 12.4 0"/>
+                <path d="M9 15.9a5.4 5.4 0 0 1 6 0"/>
+                <circle cx="12" cy="19.6" r=".9" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            <h3>Wi-Fi Access</h3>
+            <p>Stay connected during your visit.</p>
+          </li>
+
+          <li class="amenity reveal" data-delay="120">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 3v7a2 2 0 0 0 4 0V3"/>
+                <path d="M9 12v9"/>
+                <path d="M17 3c-1.6 1.8-1.6 4.7 0 6.5V21"/>
+              </svg>
+            </span>
+            <h3>Dining</h3>
+            <p>Convenient dining during your stay.</p>
+          </li>
+
+          <li class="amenity reveal" data-delay="180">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 8h12v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8z"/>
+                <path d="M16 9.5h1.5a2.5 2.5 0 0 1 0 5H16"/>
+                <path d="M4 21h12"/>
+              </svg>
+            </span>
+            <h3>Room Service</h3>
+            <p>In-room dining for your comfort.</p>
+          </li>
+
+          <!-- Row 2 -->
+          <li class="amenity reveal" data-delay="240">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 18h16"/>
+                <path d="M6.5 18a5.5 5.5 0 0 1 11 0"/>
+                <path d="M12 12.5V10.5"/>
+                <circle cx="12" cy="8.6" r="1.6"/>
+              </svg>
+            </span>
+            <h3>24-Hour Front Desk</h3>
+            <p>Assistance whenever you need it.</p>
+          </li>
+
+          <li class="amenity reveal" data-delay="300">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 3.5 2.5 11l6.5 2.5 2.5 6.5 10-16.5z"/>
+                <path d="M9 13.5 21.5 3.5"/>
+              </svg>
+            </span>
+            <h3>Travel Desk</h3>
+            <p>Local travel assistance for guests.</p>
+          </li>
+
+          <li class="amenity reveal" data-delay="360">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 10h18"/>
+                <path d="M5 10V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/>
+                <path d="M5 10v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8"/>
+              </svg>
+            </span>
+            <h3>Waiting Lounge</h3>
+            <p>Relax before check-in or departure.</p>
+          </li>
+
+          <li class="amenity reveal" data-delay="420">
+            <span class="amenity-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3 2"/>
+              </svg>
+            </span>
+            <h3>Convenient Location</h3>
+            <p>In the heart of MP Nagar, Bhopal.</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DINING
+    ============================================================ -->
+    <section class="section dining" id="dining">
+      <div class="container dining-grid">
+
+        <div class="dining-media reveal">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
+            alt="Dining area at Hotel Varshish Inn, Bhopal"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="dining-body reveal" data-delay="120">
+          <p class="eyebrow">Dining</p>
+          <h2 class="section-title">Dine, Relax &amp; Enjoy</h2>
+          <p class="lead">
+            Enjoy a convenient dining experience during your stay with a
+            selection of flavours to suit your visit.
+          </p>
+          <p class="muted">
+            Whether you're starting your day or unwinding after a long one,
+            our dining service is designed to keep your stay comfortable
+            and effortless.
+          </p>
+
+          <ul class="dining-points">
+            <li>In-house dining during your stay</li>
+            <li>Room service available for guests</li>
+            <li>Convenient for business and leisure travellers</li>
+          </ul>
+
+          <button class="btn btn-gold" type="button" data-enquiry>Enquire Now</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY
+    ============================================================ -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2 class="section-title">Discover Hotel Varshish Inn</h2>
+          <p class="section-sub">Click any image to view it in full size.</p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+          <figure class="gallery-item reveal" tabindex="0" role="button" aria-label="View hotel exterior">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Hotel exterior with Romanian-themed facade" loading="lazy" />
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="60" tabindex="0" role="button" aria-label="View grand reception">
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80" alt="Grand reception area at Hotel Varshish Inn" loading="lazy" />
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="120" tabindex="0" role="button" aria-label="View lobby">
+            <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=900&q=80" alt="Lobby at Hotel Varshish Inn, Bhopal" loading="lazy" />
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="60" tabindex="0" role="button" aria-label="View a room">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80" alt="Guest room at Hotel Varshish Inn" loading="lazy" />
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="120" tabindex="0" role="button" aria-label="View suite">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Suite room at Hotel Varshish Inn" loading="lazy" />
+          </figure>
+
+          <figure class="gallery-item reveal" tabindex="0" role="button" aria-label="View dining space">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Dining space at Hotel Varshish Inn" loading="lazy" />
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="60" tabindex="0" role="button" aria-label="View hotel interior">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Interior at Hotel Varshish Inn" loading="lazy" />
+          </figure>
+
+          <figure class="gallery-item reveal" data-delay="120" tabindex="0" role="button" aria-label="View hotel space">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="Hotel space at Hotel Varshish Inn, Bhopal" loading="lazy" />
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LOCATION / CONTACT
+    ============================================================ -->
+    <section class="section location" id="contact">
+      <div class="container location-grid">
+
+        <div class="location-body reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Find Us in Bhopal</h2>
+
+          <address class="location-address">
+            <strong>Hotel Varshish Inn</strong><br />
+            111, near Hotel Aditya Residency,<br />
+            Near City Hospital, Zone-II,<br />
+            Maharana Pratap Nagar,<br />
+            Bhopal, Madhya Pradesh – 462011
+          </address>
+
+          <p class="muted">
+            Located near City Hospital in MP Nagar, Hotel Varshish Inn is
+            easily accessible from key parts of Bhopal.
+          </p>
+
+          <div class="location-contact">
+            <a href="tel:+917898980115" class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/>
+                </svg>
+              </span>
+              <span>
+                <em>Reservations</em>
+                <strong>+91 78989 80115</strong>
+              </span>
+            </a>
+          </div>
+
+          <div class="location-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Hotel+Varshish+Inn+MP+Nagar+Bhopal"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-gold"
+            >
+              Get Directions
+            </a>
+
+            <a
+              href="https://www.instagram.com/hotelvarshishinn"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+
+        <div class="location-media reveal" data-delay="120">
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80"
+            alt="Exterior of Hotel Varshish Inn with its Romanian-themed facade"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BOOKING CTA
+    ============================================================ -->
+    <section class="cta" id="booking">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content reveal">
+        <p class="eyebrow">Reservations</p>
+        <h2 class="section-title">Plan Your Stay with Us</h2>
+        <p class="cta-text">
+          Whether you're visiting Bhopal for business or leisure,
+          Hotel Varshish Inn is ready to welcome you.
+        </p>
+        <button class="btn btn-gold btn-lg" type="button" data-enquiry>
+          Book Your Stay
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" role="img">
+              <path d="M10 40 L10 82 L70 82 L70 40 Q70 10 40 10 Q10 10 10 40 Z"
+                    fill="none" stroke="currentColor" stroke-width="2.2" />
+              <path d="M14 42 L14 78 L66 78 L66 42 Q66 14 40 14 Q14 14 14 42 Z"
+                    fill="none" stroke="currentColor" stroke-width="1" opacity="0.6" />
+              <path d="M40 22 L42 28 L48 30 L42 32 L40 38 L38 32 L32 30 L38 28 Z"
+                    fill="currentColor" />
+              <path d="M24 38 Q20 52 22 72 Q24 68 26 62 Q28 50 26 40 Z"
+                    fill="currentColor" opacity="0.9" />
+              <path d="M40 42 Q36 58 36 74 Q40 70 40 74 Q40 58 40 42 Z"
+                    fill="currentColor" />
+              <path d="M56 38 Q60 52 58 72 Q56 68 54 62 Q52 50 54 40 Z"
+                    fill="currentColor" opacity="0.9" />
+              <text x="40" y="96" text-anchor="middle"
+                    font-family="Playfair Display, Georgia, serif"
+                    font-size="11" letter-spacing="1.4" fill="currentColor">VARSHISH</text>
+            </svg>
+          </span>
+          <span class="logo-text">
+            <strong>Hotel Varshish Inn</strong>
+            <em>Bhopal</em>
+          </span>
+        </a>
+
+        <p>
+          Comfortable stays, warm hospitality and convenient access
+          in the heart of Bhopal.
+        </p>
+
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/hotelvarshishinn"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >Instagram</a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Location</h3>
+        <ul>
+          <li>111, Zone-II, MP Nagar</li>
+          <li>Near City Hospital</li>
+          <li>Bhopal, MP – 462011</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Reservations</h3>
+        <p class="footer-note">
+          Call us for enquiries and best available rates.
+        </p>
+        <a href="tel:+917898980115" class="btn btn-gold">+91 78989 80115</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Hotel Varshish Inn. All Rights Reserved.</p>
+      <p>MP Nagar, Bhopal, Madhya Pradesh</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       ENQUIRY MODAL
+  ============================================================ -->
+  <div class="modal" id="enquiryModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="enquiryTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" aria-label="Close enquiry" data-close-modal>&times;</button>
+
+      <p class="eyebrow">Enquiry</p>
+      <h2 class="modal-title" id="enquiryTitle">Plan Your Stay</h2>
+      <p class="modal-text">
+        Thank you for your interest in Hotel Varshish Inn. To check availability
+        and receive the best available rates, please reach out to us.
+      </p>
+
+      <div class="modal-options">
+        <a href="tel:+917898980115" class="btn btn-gold modal-option">
+          Call +91 78989 80115
+        </a>
+
+        <a
+          href="https://www.instagram.com/hotelvarshishinn"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-outline modal-option"
+        >
+          Message on Instagram
+        </a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Hotel+Varshish+Inn+MP+Nagar+Bhopal"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-outline modal-option"
+        >
+          Get Directions
+        </a>
+      </div>
+
+      <p class="modal-note">
+        Hotel Varshish Inn &middot; MP Nagar, Bhopal, MP – 462011
+      </p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       GALLERY LIGHTBOX
+  ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#10094;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <!-- ============================================================
+       BACK TO TOP
+  ============================================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="VARSIS.JS"></script>
+</body>
+</html>
